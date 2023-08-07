@@ -1,0 +1,385 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-06T12:26:16.499Z",
+        "line": 34,
+        "name": "Verify the E2E Checkout process on the site",
+        "description": "",
+        "id": "login-into-the-sauce-demo---swag-labs-website-and-then-proceed-with-the-checkout-process;verify-the-e2e-checkout-process-on-the-site;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 371018800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3024032900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User is Navigated to the Sauce Demo site",
+            "match": {
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.navigateToSauceDemoSite()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 2990500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 200898800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User Enter standard_user",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.userEnterUsername(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131688700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User then Enter secret_sauce",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.userEnterPassword(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 502800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174693500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on Login Button",
+            "match": {
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.clickOnLoginButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15449300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Verify that User has successfully logged in to the site",
+            "match": {
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.LoggedInToTheSite()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 996000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111144700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Add to Cart",
+            "match": {
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.addToCart()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 123359400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click Cart link",
+            "match": {
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.clickCartLink()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124490500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click on the Checkout button",
+            "match": {
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.clickOnTheCheckoutButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 996500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134087900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enter the firstname Ahsan",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ahsan",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.userEnterTheFirstname(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 135282300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "then Enter the lastname Tester",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tester",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.thenEnterTheLastname(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116769100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "then User Enter Postal Code 1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.thenUserEnterPostalCode(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 996200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120950000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Click on the Continue button",
+            "match": {
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.clickOnTheContinueButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1026500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 107203500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Click on the Finish button",
+            "match": {
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.clickOnTheFinishButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 998800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116637100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Verify the Order completion with header and text message",
+            "match": {
+              "location": "stepDefinitions.LoginAndCheckOutPageStepDefinition.verifyTheOrderCompletion()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginAndCheckout"
+          }
+        ]
+      }
+    ],
+    "name": "Login into the Sauce Demo - Swag Labs website and then proceed with the Checkout Process",
+    "description": "",
+    "id": "login-into-the-sauce-demo---swag-labs-website-and-then-proceed-with-the-checkout-process",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/LoginAndCheckout.feature",
+    "tags": []
+  }
+]
